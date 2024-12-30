@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sufang's Portfolio | Contact</title>
+    <link rel="icon" type="image/x-icon" href="logo.svg" />
+    <link href="app.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <a href="index.html"
+        ><img class="logo" src="./img/logo.svg" alt="Sufang's Logo" />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item home-list">
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="nav-list-item"><a href="about.html"> About</a></li>
+          <li class="nav-list-item"><a href="portfolio.html"> Portfolio</a></li>
+          <li class="nav-list-item"><a href="process.html"> Process</a></li>
+          <li class="nav-list-item"><a href="contact.html"> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-container">
+      <img class="contact-image" src="./img/contact.svg" alt="contact icon" />
+      <!-- image from https://www.iconfinder.com/search?q=contact&price=free -->
+
+      <form
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <h2>Let's get in touch</h2>
+        <input
+          type="hidden"
+          name="access_key"
+          value="3b72d041-6386-423e-b2e7-08b2d27c26d9"
+        />
+
+        <!-- the 'for' attribute in 'label' should match the 'id' attribute in 'input' to link them together. you can create multiple inputs for one label -->
+        <label class="form-item" for="fname"> First Name*</label>
+        <input
+          class="form-item"
+          type="text"
+          id="fname"
+          name="firstName"
+          placeholder="First"
+          required
+        />
+        <label class="form-item" for="lname"> Last Name*</label>
+        <input
+          class="form-item"
+          type="text"
+          id="lname"
+          name="lastName"
+          placeholder="Last"
+          required
+        />
+
+        <label class="form-item" for="email"> Email*</label>
+        <input
+          class="form-item"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+
+        <label class="form-item" for="message"> Message*</label>
+        <textarea
+          class="form-item"
+          id="message"
+          placeholder="Message"
+          rows="5"
+          cols="40"
+          required
+        ></textarea>
+
+        <button type="submit" class="form-item">SEND</button>
+        <!-- <input type="submit" value="SEND"> -->
+        <!-- <input type="button" value="SEND"> -->
+      </form>
+    </main>
+
+    <footer class="footer-container">
+      <ul class="footer-list-container">
+        <li class="footer-list-item social">
+          <a href="mailto:laisg@mail.uc.edu">
+            <img src="./img/EmailIcon.svg" alt="Email Icon"
+          /></a>
+        </li>
+        <li class="footer-list-item social">
+          <a href="https://www.linkedin.com/in/sufanglai/" target="_blank">
+            <img src="./img/LinkedInIcon.svg" alt="LinkedIn Icon"
+          /></a>
+        </li>
+        <li class="footer-list-item social">
+          <a href="https://github.com/LaiSufang" target="_blank">
+            <img src="./img/GitHubIcon.svg" alt="GitHub Icon"
+          /></a>
+        </li>
+        <li class="footer-list-item social">
+          <a href="index.html">
+            <img src="./img/WebsiteIcon.svg" alt="Website Icon"
+          /></a>
+        </li>
+      </ul>
+      <p class="copyright">
+        <span>&copy;SUFANG LAI 2025. </span> Icons by
+        <a
+          href="https://www.iconfinder.com/search/icons?family=unicons-line"
+          target="_blank"
+          >Iconscout</a
+        >
+      </p>
+    </footer>
+    <!-- Email, LinkedIn, GitHub, and Globe icons from https://www.iconfinder.com/search/icons?family=unicons-line -->
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

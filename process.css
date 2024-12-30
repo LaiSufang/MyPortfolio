@@ -1,0 +1,78 @@
+.process-container {
+  padding: 2rem;
+  margin: 0 auto;
+}
+.process-container h2 {
+  font-size: 2.4rem;
+  color: #5372f0;
+  padding-bottom: 2rem;
+}
+.process-container h3 {
+  font-size: 1.8rem;
+  color: #5372f0;
+  padding: 2rem 0;
+}
+.process-container p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.step2-container {
+  font-size: 1rem;
+  padding: 2rem;
+  line-height: 2rem;
+}
+.wireframe-images {
+  width: 95%;
+  filter: brightness(80%);
+  padding: 1rem 0 0;
+}
+.image-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.design-images {
+  width: 85%;
+  padding: 1rem 0 0;
+}
+
+.process-container .figure-captions {
+  font-size: 0.8rem;
+  color: #a0a7b4;
+  padding-top: 0;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgba(218, 228, 252, 0.5);
+}
+
+th {
+  height: 4rem;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 2px solid rgba(218, 228, 252, 0.5);
+}
+tr,
+td {
+  border-bottom: 0.5px solid rgba(218, 228, 252, 0.5);
+  height: 1.5rem;
+  padding: 1rem;
+}
+tr:hover {
+  background-color: rgba(83, 114, 240, 0.08);
+}
+
+@media only screen and (min-width: 735px) {
+  main {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1069px) {
+  .process-container {
+    margin: 4rem auto;
+    width: 80%;
+  }
+}

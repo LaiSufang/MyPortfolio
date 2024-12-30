@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #cfd0d4;
+  background-color: #262629;
+  background-image: url(./img/background1.svg);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Header */
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  align-items: baseline;
+  height: 3em;
+}
+.nav {
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 1.5rem 0;
+}
+.nav-list-item {
+  list-style-type: none;
+}
+.nav-list-item a {
+  text-decoration: none;
+  color: #cfd0d4;
+  font-weight: 500;
+}
+.nav-list-item a:focus,
+.nav-list-item a:hover {
+  color: #5372f0;
+}
+
+/* Footer */
+.footer-list-container {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+}
+.footer-list-item {
+  list-style-type: none;
+}
+.copyright {
+  font-size: 0.6rem;
+  color: #646567;
+  text-align: center;
+  padding: 1rem;
+}
+.copyright a {
+  color: #646567;
+}
+
+/* To make the footer always at the bottom of the page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1; /* Ensures the main content grows to fill space so that it can push the footer to the bottom if there isn’t enough content.*/
+}
+
+.scroll-up-icon {
+  width: 40px;
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.scroll-up-icon:hover {
+  transform: translateY(-5px);
+}
+
+/* Media Query -- Desktop */
+@media only screen and (min-width: 735px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .nav {
+    padding-top: 1rem;
+  }
+  .nav-list {
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 5rem;
+  }
+  .scroll-up-icon {
+    width: 50px;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1069px) {
+  .nav-list-item a {
+    font-size: 1.4rem;
+  }
+  .nav-list {
+    margin-left: 8rem;
+  }
+  .scroll-up-icon {
+    width: 60px;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}

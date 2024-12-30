@@ -1,0 +1,178 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.close-about-btn {
+  display: none;
+}
+main h3 {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+.about1,
+.about2,
+.about3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24rem;
+  height: 24rem;
+  padding: 2rem;
+  background-color: rgba(83, 114, 240, 0.05);
+  border-radius: 100%;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24rem;
+  height: 24rem;
+  padding: 2rem;
+  background-color: rgba(83, 114, 240, 0.05);
+  border-radius: 100%;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.about {
+  animation: sway 6s infinite ease-in-out;
+}
+.about:nth-of-type(2) {
+  animation: float 6s infinite ease-in-out;
+}
+
+.about1,
+.about3 {
+  animation: sway 6s infinite ease-in-out;
+}
+.about2 {
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes sway {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 735px) {
+  main {
+    margin: 2rem 0;
+  }
+  .about1,
+  .about2,
+  .about3 {
+    margin: 0 auto;
+    width: 28rem;
+    height: 28rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .about {
+    margin: 0 auto;
+    width: 28rem;
+    height: 28rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .close-about-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1069px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    z-index: 5;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  /* .about1,
+  .about2,
+  .about3 {
+    width: 18rem;
+    height: 18rem;
+    line-height: 2rem;
+    cursor: pointer;
+  } */
+  .about {
+    width: 18rem;
+    height: 18rem;
+    line-height: 2rem;
+    cursor: pointer;
+  }
+
+  .raise {
+    z-index: 6;
+    width: 35rem;
+    height: 35rem;
+    line-height: 2rem;
+    h3 {
+      font-size: 2.5rem;
+    }
+    cursor: default;
+  }
+  .close-about-btn {
+    border-radius: 50%;
+    border: 1px solid #8cacf5;
+    color: #8cacf5;
+    background-color: transparent;
+    /* background-color: #df6057;
+    color: #262629;
+    border: none; */
+    width: 3rem;
+    height: 3rem;
+    /* align-self: center; */
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: 18;
+    animation: sway 6s infinite ease-in-out;
+  }
+  .show {
+    display: block;
+  }
+}

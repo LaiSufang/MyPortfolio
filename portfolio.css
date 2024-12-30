@@ -1,0 +1,56 @@
+.portfolio-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.project1,
+.project2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(83, 114, 240, 0.05);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+.portfolio-main-container h3 {
+  font-size: 1.8rem;
+}
+.portfolio-main-container .date {
+  padding-bottom: 0;
+}
+.portfolio-main-container p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 1rem 2rem;
+}
+.map-image {
+  opacity: 75%;
+  width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  filter: brightness(90%);
+}
+.amazing-game {
+  opacity: 75%;
+  max-width: 100%;
+  border-radius: 1rem;
+  filter: brightness(90%);
+  border: none;
+}
+
+@media only screen and (min-width: 735px) {
+  main {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1069px) {
+  .portfolio-main-container {
+    width: 80%;
+    margin: 4rem auto;
+  }
+}
